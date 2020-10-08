@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		76AB538F252FB1DE00756674 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB538E252FB1DE00756674 /* HTTPClient.swift */; };
+		76AB5393252FB23D00756674 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB5392252FB23D00756674 /* FeedItemsMapper.swift */; };
 		76C3450F252653EA00C07984 /* FPFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C34505252653EA00C07984 /* FPFeed.framework */; };
 		76C3452025265AF100C07984 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3451F25265AF100C07984 /* FeedItem.swift */; };
 		76C3452225265BAA00C07984 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3452125265BAA00C07984 /* FeedLoader.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		76AB538E252FB1DE00756674 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HTTPClient.swift; path = "FPFeed/Feed Api/HTTPClient.swift"; sourceTree = "<group>"; };
+		76AB5392252FB23D00756674 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedItemsMapper.swift; path = "FPFeed/Feed Api/FeedItemsMapper.swift"; sourceTree = "<group>"; };
 		76C34505252653EA00C07984 /* FPFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FPFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C34509252653EA00C07984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C3450E252653EA00C07984 /* FPFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +61,7 @@
 		76C344FB252653EA00C07984 = {
 			isa = PBXGroup;
 			children = (
+				76AB5392252FB23D00756674 /* FeedItemsMapper.swift */,
 				76AB538E252FB1DE00756674 /* HTTPClient.swift */,
 				76C34507252653EA00C07984 /* FPFeed */,
 				76C34512252653EA00C07984 /* FPFeedTests */,
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76AB5393252FB23D00756674 /* FeedItemsMapper.swift in Sources */,
 				76C3452225265BAA00C07984 /* FeedLoader.swift in Sources */,
 				76E3BDCC252B30F600677F37 /* RemoteFeedLoader.swift in Sources */,
 				76AB538F252FB1DE00756674 /* HTTPClient.swift in Sources */,
