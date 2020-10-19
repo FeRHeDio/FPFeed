@@ -27,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		76AB538E252FB1DE00756674 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HTTPClient.swift; path = "FPFeed/Feed Api/HTTPClient.swift"; sourceTree = "<group>"; };
+		76AB538E252FB1DE00756674 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		76AB5392252FB23D00756674 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 		76C34505252653EA00C07984 /* FPFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FPFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C34509252653EA00C07984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,7 +69,6 @@
 		76C344FB252653EA00C07984 = {
 			isa = PBXGroup;
 			children = (
-				76AB538E252FB1DE00756674 /* HTTPClient.swift */,
 				76C34507252653EA00C07984 /* FPFeed */,
 				76C34512252653EA00C07984 /* FPFeedTests */,
 				76C34506252653EA00C07984 /* Products */,
@@ -88,9 +87,9 @@
 		76C34507252653EA00C07984 /* FPFeed */ = {
 			isa = PBXGroup;
 			children = (
-				76E3BDCA252B30DE00677F37 /* Feed Api */,
 				76C34509252653EA00C07984 /* Info.plist */,
 				76C3452325265C9400C07984 /* Feed Feature */,
+				76E3BDCA252B30DE00677F37 /* Feed Api */,
 			);
 			path = FPFeed;
 			sourceTree = "<group>";
@@ -107,7 +106,6 @@
 		76C3452325265C9400C07984 /* Feed Feature */ = {
 			isa = PBXGroup;
 			children = (
-				76AB5392252FB23D00756674 /* FeedItemsMapper.swift */,
 				76C3451F25265AF100C07984 /* FeedItem.swift */,
 				76C3452125265BAA00C07984 /* FeedLoader.swift */,
 			);
@@ -118,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				76E3BDCB252B30F600677F37 /* RemoteFeedLoader.swift */,
+				76AB5392252FB23D00756674 /* FeedItemsMapper.swift */,
+				76AB538E252FB1DE00756674 /* HTTPClient.swift */,
 			);
 			path = "Feed Api";
 			sourceTree = "<group>";
