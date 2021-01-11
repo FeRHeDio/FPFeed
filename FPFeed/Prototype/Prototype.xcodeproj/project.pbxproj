@@ -13,6 +13,7 @@
 		7629930925AC8D01004C0E79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7629930825AC8D01004C0E79 /* Assets.xcassets */; };
 		7629930C25AC8D01004C0E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7629930A25AC8D01004C0E79 /* LaunchScreen.storyboard */; };
 		767D4B3E25AD0D640049EF7B /* FeedImageViewModel+PrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767D4B3D25AD0D640049EF7B /* FeedImageViewModel+PrototypeData.swift */; };
+		767D4B4125AD0E130049EF7B /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767D4B4025AD0E130049EF7B /* FeedImageCell.swift */; };
 		76E9563D25ACA11400294A98 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E9563C25ACA11400294A98 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		7629930B25AC8D01004C0E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7629930D25AC8D01004C0E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		767D4B3D25AD0D640049EF7B /* FeedImageViewModel+PrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageViewModel+PrototypeData.swift"; sourceTree = "<group>"; };
+		767D4B4025AD0E130049EF7B /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 		76E9563C25ACA11400294A98 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 				762992FF25AC8D00004C0E79 /* AppDelegate.swift */,
 				7629930125AC8D00004C0E79 /* SceneDelegate.swift */,
 				7629930525AC8D00004C0E79 /* Main.storyboard */,
+				767D4B4025AD0E130049EF7B /* FeedImageCell.swift */,
 				76E9563C25ACA11400294A98 /* FeedViewController.swift */,
 				767D4B3D25AD0D640049EF7B /* FeedImageViewModel+PrototypeData.swift */,
 				7629930825AC8D01004C0E79 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				76E9563D25ACA11400294A98 /* FeedViewController.swift in Sources */,
 				7629930225AC8D00004C0E79 /* SceneDelegate.swift in Sources */,
 				767D4B3E25AD0D640049EF7B /* FeedImageViewModel+PrototypeData.swift in Sources */,
+				767D4B4125AD0E130049EF7B /* FeedImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
