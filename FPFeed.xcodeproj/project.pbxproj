@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		767D4B5525ADD52C0049EF7B /* FPFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767D4B4C25ADD52C0049EF7B /* FPFeediOS.framework */; };
 		767F1AC32562D20500BAEDBE /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767F1AC22562D20500BAEDBE /* URLSessionHTTPClientTests.swift */; };
 		76AB538F252FB1DE00756674 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB538E252FB1DE00756674 /* HTTPClient.swift */; };
 		76AB5393252FB23D00756674 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AB5392252FB23D00756674 /* FeedItemsMapper.swift */; };
@@ -18,6 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		767D4B5625ADD52C0049EF7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76C344FC252653EA00C07984 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767D4B4B25ADD52C0049EF7B;
+			remoteInfo = FPFeediOS;
+		};
 		76C34510252653EA00C07984 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 76C344FC252653EA00C07984 /* Project object */;
@@ -28,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		767D4B4C25ADD52C0049EF7B /* FPFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FPFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		767D4B4F25ADD52C0049EF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767D4B5425ADD52C0049EF7B /* FPFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		767D4B5B25ADD52C0049EF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		767F1AC22562D20500BAEDBE /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		76AB538E252FB1DE00756674 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		76AB5392252FB23D00756674 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
@@ -42,6 +54,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		767D4B4925ADD52C0049EF7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767D4B5125ADD52C0049EF7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767D4B5525ADD52C0049EF7B /* FPFeediOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76C34502252653EA00C07984 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,6 +87,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		767D4B4D25ADD52C0049EF7B /* FPFeediOS */ = {
+			isa = PBXGroup;
+			children = (
+				767D4B4F25ADD52C0049EF7B /* Info.plist */,
+			);
+			path = FPFeediOS;
+			sourceTree = "<group>";
+		};
+		767D4B5825ADD52C0049EF7B /* FPFeediOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				767D4B5B25ADD52C0049EF7B /* Info.plist */,
+			);
+			path = FPFeediOSTests;
+			sourceTree = "<group>";
+		};
 		76AB5396252FC4B700756674 /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +117,8 @@
 			children = (
 				76C34507252653EA00C07984 /* FPFeed */,
 				76C34512252653EA00C07984 /* FPFeedTests */,
+				767D4B4D25ADD52C0049EF7B /* FPFeediOS */,
+				767D4B5825ADD52C0049EF7B /* FPFeediOSTests */,
 				76C34506252653EA00C07984 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +128,8 @@
 			children = (
 				76C34505252653EA00C07984 /* FPFeed.framework */,
 				76C3450E252653EA00C07984 /* FPFeedTests.xctest */,
+				767D4B4C25ADD52C0049EF7B /* FPFeediOS.framework */,
+				767D4B5425ADD52C0049EF7B /* FPFeediOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +175,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		767D4B4725ADD52C0049EF7B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76C34500252653EA00C07984 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +192,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		767D4B4B25ADD52C0049EF7B /* FPFeediOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767D4B5D25ADD52C0049EF7B /* Build configuration list for PBXNativeTarget "FPFeediOS" */;
+			buildPhases = (
+				767D4B4725ADD52C0049EF7B /* Headers */,
+				767D4B4825ADD52C0049EF7B /* Sources */,
+				767D4B4925ADD52C0049EF7B /* Frameworks */,
+				767D4B4A25ADD52C0049EF7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FPFeediOS;
+			productName = FPFeediOS;
+			productReference = 767D4B4C25ADD52C0049EF7B /* FPFeediOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		767D4B5325ADD52C0049EF7B /* FPFeediOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767D4B6025ADD52C0049EF7B /* Build configuration list for PBXNativeTarget "FPFeediOSTests" */;
+			buildPhases = (
+				767D4B5025ADD52C0049EF7B /* Sources */,
+				767D4B5125ADD52C0049EF7B /* Frameworks */,
+				767D4B5225ADD52C0049EF7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				767D4B5725ADD52C0049EF7B /* PBXTargetDependency */,
+			);
+			name = FPFeediOSTests;
+			productName = FPFeediOSTests;
+			productReference = 767D4B5425ADD52C0049EF7B /* FPFeediOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		76C34504252653EA00C07984 /* FPFeed */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76C34519252653EA00C07984 /* Build configuration list for PBXNativeTarget "FPFeed" */;
@@ -180,10 +270,16 @@
 		76C344FC252653EA00C07984 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = eFePe;
 				TargetAttributes = {
+					767D4B4B25ADD52C0049EF7B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					767D4B5325ADD52C0049EF7B = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					76C34504252653EA00C07984 = {
 						CreatedOnToolsVersion = 11.5;
 						LastSwiftMigration = 1150;
@@ -209,11 +305,27 @@
 			targets = (
 				76C34504252653EA00C07984 /* FPFeed */,
 				76C3450D252653EA00C07984 /* FPFeedTests */,
+				767D4B4B25ADD52C0049EF7B /* FPFeediOS */,
+				767D4B5325ADD52C0049EF7B /* FPFeediOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		767D4B4A25ADD52C0049EF7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767D4B5225ADD52C0049EF7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76C34503252653EA00C07984 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,6 +343,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		767D4B4825ADD52C0049EF7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767D4B5025ADD52C0049EF7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76C34501252653EA00C07984 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +381,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		767D4B5725ADD52C0049EF7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 767D4B4B25ADD52C0049EF7B /* FPFeediOS */;
+			targetProxy = 767D4B5625ADD52C0049EF7B /* PBXContainerItemProxy */;
+		};
 		76C34511252653EA00C07984 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 76C34504252653EA00C07984 /* FPFeed */;
@@ -263,6 +394,104 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		767D4B5E25ADD52C0049EF7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F342975UV4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FPFeediOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.efepe.FPFeediOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		767D4B5F25ADD52C0049EF7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F342975UV4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FPFeediOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.efepe.FPFeediOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		767D4B6125ADD52C0049EF7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F342975UV4;
+				INFOPLIST_FILE = FPFeediOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.efepe.FPFeediOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		767D4B6225ADD52C0049EF7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F342975UV4;
+				INFOPLIST_FILE = FPFeediOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.efepe.FPFeediOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		76C34517252653EA00C07984 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -481,6 +710,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		767D4B5D25ADD52C0049EF7B /* Build configuration list for PBXNativeTarget "FPFeediOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767D4B5E25ADD52C0049EF7B /* Debug */,
+				767D4B5F25ADD52C0049EF7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		767D4B6025ADD52C0049EF7B /* Build configuration list for PBXNativeTarget "FPFeediOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767D4B6125ADD52C0049EF7B /* Debug */,
+				767D4B6225ADD52C0049EF7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		76C344FF252653EA00C07984 /* Build configuration list for PBXProject "FPFeed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
