@@ -34,8 +34,8 @@ final class FeedImageCell: UITableViewCell {
         feedImageView.image = image
         
         UIView.animate(
-            withDuration: 0.3,
-            delay: 0.3,
+            withDuration: 0.25,
+            delay: 1.25,
             options: [],
             animations: {
                 self.feedImageView?.alpha = 1
