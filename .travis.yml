@@ -1,0 +1,4 @@
+OS: OSX
+osx_image: xcode12.2
+language: swift
+script: xcodebuild clean build test -project FPFeed.xcodeproj -scheme "CI" CODE_SIGN_IDENTITY="" CODE_SIGNGING_REQUIRED=NO
