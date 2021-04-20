@@ -7,29 +7,54 @@
 //
 
 import XCTest
+import FPFeed
 
 class LocalFeedLoader {
+  private let store: FeedStore
   
   init(store: FeedStore) {
-    
+    self.store = store
+  }
+  
+  func save(_ items: [FeedItem]) {
+    store.deleteCachedFeed()
   }
 }
 
 class FeedStore {
-  
   var deleteCachedCallCount = 0
   
+  func deleteCachedFeed() {
+    deleteCachedCallCount += 1
+  }
 }
 
 class CacheFeedUseCaseTests: XCTestCase {
   
   func test_init_DoesNotDeleteCacheUponCreation() {
     let store = FeedStore()
-    
     _ = LocalFeedLoader(store: store)
     
     XCTAssertEqual(store.deleteCachedCallCount, 0)
+  }
+
+  func test_save_requestCacheDeletion() {
+    let store = FeedStore()
+    let sut = LocalFeedLoader(store: store)
+    let items = [uniqueItem(), uniqueItem()]
     
+    sut.save(items)
+    
+    XCTAssertEqual(store.deleteCachedCallCount, 1)
   }
   
+  //MARK: - Helpers.
+  
+  private func uniqueItem() -> FeedItem {
+    return FeedItem(id: UUID(), description: "any", location: "any", imageURL: anyURL())
+  }
+  
+  private func anyURL() -> URL {
+    return URL(string: "any-url.com")!
+  }
 }
