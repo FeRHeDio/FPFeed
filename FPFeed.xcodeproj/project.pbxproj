@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76082C5D26500D9B00556C4A /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76082C5C26500D9B00556C4A /* RemoteFeedItem.swift */; };
 		762E52BE262F3BC10008A9C6 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762E52BD262F3BC10008A9C6 /* CacheFeedUseCaseTests.swift */; };
 		767BF26A25ADEC0E008A6FB8 /* FPFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C34505252653EA00C07984 /* FPFeed.framework */; platformFilter = ios; };
 		767BF26B25ADEC0E008A6FB8 /* FPFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76C34505252653EA00C07984 /* FPFeed.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -75,6 +76,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		76082C5C26500D9B00556C4A /* RemoteFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedItem.swift; sourceTree = "<group>"; };
 		762E52BD262F3BC10008A9C6 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		767D4B4C25ADD52C0049EF7B /* FPFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FPFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		767D4B4F25ADD52C0049EF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			children = (
 				76E3BDCB252B30F600677F37 /* RemoteFeedLoader.swift */,
 				76AB5392252FB23D00756674 /* FeedItemsMapper.swift */,
+				76082C5C26500D9B00556C4A /* RemoteFeedItem.swift */,
 				76AB538E252FB1DE00756674 /* HTTPClient.swift */,
 				76F2D86725D3012300C29C3E /* URLSessionHTTPClient.swift */,
 			);
@@ -511,6 +514,7 @@
 			files = (
 				76AB5393252FB23D00756674 /* FeedItemsMapper.swift in Sources */,
 				76C3452225265BAA00C07984 /* FeedLoader.swift in Sources */,
+				76082C5D26500D9B00556C4A /* RemoteFeedItem.swift in Sources */,
 				76E3BDCC252B30F600677F37 /* RemoteFeedLoader.swift in Sources */,
 				76B53111264E996B00C76C2D /* FeedStore.swift in Sources */,
 				76B53107264E98EE00C76C2D /* LocalFeedLoader.swift in Sources */,
