@@ -77,9 +77,7 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
   }
   
   func test_load_deliversItemsOnHTTPResponseWithJSONItems() {
-    
     let (sut, client) = makeSUT()
-    
     let item1 = makeItem(
       id: UUID(),
       imageURL: URL(string: "http://www.someurl.com")!)
@@ -99,7 +97,6 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
   }
   
   func test_loadDoesNotDeliverResultAfterSUTInstanceHaveBeenDeallocated() {
-    
     let url = URL(string: "some-url.com")!
     let client = HTTPClientSpy()
     var sut: RemoteFeedLoader? = RemoteFeedLoader(url: url, client: client)
@@ -111,13 +108,9 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
     client.complete(withStatusCode: 200, data: makeItemsJSON([]))
     
     XCTAssertTrue(capturedResults.isEmpty)
-    
   }
   
-  //-->>
   //MARK: Helpers
-  //-->>
-  
   
   private func makeSUT(url: URL = URL(string: "http://a-url.com")!, file: StaticString = #file, line: UInt = #line) -> (sut: RemoteFeedLoader, client: HTTPClientSpy) {
     
@@ -150,11 +143,9 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
   }
   
   func makeItemsJSON(_ items: [[String: Any]]) -> Data {
-    
     let json = ["items": items]
     
     return try! JSONSerialization.data(withJSONObject: json)
-    
   }
   
   private func expect(_ sut: RemoteFeedLoader, toCompleteWith expectedResult: RemoteFeedLoader.Result, when action: () -> Void, file: StaticString = #file, line: UInt = #line) {
