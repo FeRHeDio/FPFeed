@@ -9,7 +9,7 @@
 import XCTest
 import FPFeed
 
-class CodableFeedStore {
+class CodableFeedStore: FeedStore {
   private struct Cache: Codable {
     let feed: [CodableFeedImage]
     let timestamp: Date
@@ -69,7 +69,7 @@ class CodableFeedStore {
     }
   }
   
-  func deletedCachedFeed(completion: @escaping FeedStore.DeletionCompletion) {
+  func deleteCachedFeed(completion: @escaping FeedStore.DeletionCompletion) {
     guard FileManager.default.fileExists(atPath: storeURL.path) else {
       return completion(nil)
     }
@@ -224,7 +224,7 @@ class CodabelFeedStoreTests: XCTestCase {
   private func deleteCache(from sut: CodableFeedStore) -> Error? {
     let exp = expectation(description: "Wait for cache deletion")
     var deletionError: Error?
-    sut.deletedCachedFeed { receivedError in
+    sut.deleteCachedFeed { receivedError in
       deletionError = receivedError
       exp.fulfill()
     }
