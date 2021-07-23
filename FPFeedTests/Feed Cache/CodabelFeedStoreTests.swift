@@ -159,7 +159,7 @@ class CodabelFeedStoreTests: XCTestCase, FailableFeedStore {
     let sut = makeSUT()
     insert((uniqueImageFeed().local, Date()), to: sut)
     
-    let deletionError = deleteCache(from: sut)
+    _ = deleteCache(from: sut)
     
     expect(sut, toRetrieve: .empty)
   }
@@ -229,6 +229,7 @@ class CodabelFeedStoreTests: XCTestCase, FailableFeedStore {
     return insertionError
   }
   
+  @discardableResult
   private func deleteCache(from sut: FeedStore) -> Error? {
     let exp = expectation(description: "Wait for cache deletion")
     var deletionError: Error?
